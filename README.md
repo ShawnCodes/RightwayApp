@@ -2,6 +2,7 @@
 
 * Ruby version -- 2.4
 * Yarn version -- 1.13.0
+* Rails version -- 5.2.2
 
 This is a simple file upload application with the following workflow:
 
