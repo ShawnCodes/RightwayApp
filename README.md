@@ -16,9 +16,13 @@ This is a simple file upload application with the following workflow:
 **To get Started run the following**
 
 *bundle install
+
 *run : rake db:create && rake db:migrate
+
 *gem install foreman
+
 *cd client && npm install
+
 *foreman start -p 3000
 
 
