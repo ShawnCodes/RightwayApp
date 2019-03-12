@@ -1,24 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version -- 2.4
+* Yarn version -- 1.13.0
+* Rails version -- 5.2.2
 
-Things you may want to cover:
+This is a simple file upload application with the following workflow:
 
-* Ruby version
+-- Admin user has the ability to register and login via react and rails authentication
 
-* System dependencies
+-- Once logged in, admin users are able to send links to anonymous users to upload files
 
-* Configuration
+-- On click the user is able to upload any files
 
-* Database creation
+-- Once uploaded, admins are able to view a list of all files uploaded by all users
 
-* Database initialization
+**To get Started run the following**
 
-* How to run the test suite
+*bundle install
 
-* Services (job queues, cache servers, search engines, etc.)
+*run : rake db:create && rake db:migrate
 
-* Deployment instructions
+*gem install foreman
 
-* ...
+*cd client && npm install
+
+*foreman start -p 3000
+
+
+
