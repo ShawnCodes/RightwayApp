@@ -17,7 +17,7 @@ class Dashboard extends Component{
     }
   }
 
-  componentDidMount() {    
+  componentDidMount() {
     fetch('/profile', {
       method: 'GET',
       headers: {
@@ -45,7 +45,7 @@ class Dashboard extends Component{
 
   render() {
     return(
-      <div className='container'>
+      <div className="container">
         {(this.state.uploadsLoaded)
           ? this.state.myUploads.map(upload => {
             return <h4 key={upload.id}>{upload.name}</h4>
@@ -53,8 +53,8 @@ class Dashboard extends Component{
           : <p>Loading...</p>
         }
         <form className='form' onSubmit={(e) => this.props.handleRequestSubmit(e, this.state.email)}>
-          <input name='email' type='email' placeholder='Email Address' value={this.state.email} onChange={this.handleChange} />
-          <input type='submit' value='Send link'/>
+          <input name="email" type="email" placeholder="Email Address" value={this.state.email} onChange={this.handleChange} />
+          <input type="submit" value="Send link"/>
         </form>
       </div>
     )
